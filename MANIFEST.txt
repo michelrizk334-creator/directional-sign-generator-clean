@@ -1,0 +1,25 @@
+CODE-ONLY VERIFIED PACKAGE
+
+No media files are included.
+No videos are included.
+No images are included.
+No TypeScript .ts files are included.
+
+Files:
+index.html
+css/styles.css
+js/app.js
+js/components/renderArrowPreview.js
+js/components/renderInputs.js
+js/components/renderOutput.js
+js/components/renderSign2D.js
+js/components/renderSign3D.js
+js/data/kuwaitArrows.js
+js/data/sampleSign.js
+js/lib/exportDXF.js
+js/lib/generate3DSign.js
+js/lib/generateSignLayout.js
+js/lib/spacingRules.js
+js/lib/textMeasure.js
+README.md
+.gitignore

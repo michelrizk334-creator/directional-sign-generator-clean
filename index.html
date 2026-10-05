@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kuwait Directional Sign Generator</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Kuwait Road Code · Phase 1</p>
+          <h1>Directional Sign 3D Generator</h1>
+          <p>
+            Enter the content inside the sign. The app calculates the sign dimensions from x-based rules,
+            generates a 2D layout, shows a simple 3D board preview, and exports JSON/DXF data.
+          </p>
+        </div>
+        <div class="hero-badge">Content → x-rules → 3D sign</div>
+      </header>
+
+      <section class="workspace">
+        <aside id="input-panel" class="panel input-panel"></aside>
+
+        <section class="preview-stack">
+          <div id="output-dimensions" class="panel"></div>
+
+          <section class="panel">
+            <div class="panel-heading horizontal-heading">
+              <div>
+                <p class="eyebrow">2D front view</p>
+                <h2>Generated sign layout</h2>
+                <p>Width and height are calculated outputs, not user inputs.</p>
+              </div>
+              <div id="layout-pill" class="layout-pill">Layout 4-10</div>
+            </div>
+            <div id="sign-preview-2d"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-heading horizontal-heading">
+              <div>
+                <p class="eyebrow">3D preview</p>
+                <h2>Sign board with physical thickness</h2>
+                <p>The 2D generated face is shown on a simplified 3D board.</p>
+              </div>
+              <div id="depth-pill" class="depth-pill">Depth: 0 mm</div>
+            </div>
+            <div id="sign-preview-3d"></div>
+          </section>
+
+          <section class="panel export-panel">
+            <div class="panel-heading horizontal-heading">
+              <div>
+                <p class="eyebrow">Export foundation</p>
+                <h2>AutoCAD preparation</h2>
+                <p>Phase 1 exports a basic CAD-ready DXF placeholder and a full JSON layout record.</p>
+              </div>
+              <div class="export-actions">
+                <button id="export-json" type="button" class="secondary-button">Export JSON</button>
+                <button id="export-dxf" type="button" class="secondary-button">Export DXF</button>
+              </div>
+            </div>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>
